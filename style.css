@@ -37,9 +37,46 @@ section::after{
 
 section h1{
     position: absolute;
-    top: 80px;
+    top: 50px;
     font-size: 120px;
     z-index: 2;
+}
+
+section h2{
+    position: absolute;
+    top: 1px;
+    font-size: 25px;
+    z-index: 2;
+}
+
+section h3{
+    position: absolute;
+    top: 400px;
+    font-size: 40px;
+    z-index: 2;
+}
+
+section h4{
+    position: relative;
+    top: 300px;
+    font-size: 40px;
+    z-index: 2;
+}
+
+section h5{
+    position: relative;
+    top: 350px;
+    font-size: 40px;
+    z-index: 2;
+    text-align: center;
+}
+
+section h6{
+    position: relative;
+    top: 500px;
+    font-size: 35px;
+    z-index: 2;
+    text-align: center;
 }
 
 section #header1{
@@ -50,7 +87,7 @@ section #header1{
 
 .social-icon ul{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -59,6 +96,13 @@ section #header1{
 .social-icon ul li{
     list-style: none;
     margin: 0 50px;
+}
+
+.mylist ul li{
+    list-style: none;
+    margin: 0 50px;
+    font-size: 40px;
+    top: 100px;
 }
 
 .social-icon ul li .fab{
@@ -102,6 +146,10 @@ section #header1{
 
 .social-icon ul li:nth-child(4) a:hover{
     background-color: #3E4EB2;
+}
+
+.social-icon ul li:nth-child(5) a:hover{
+    background-color: #0c214c;
 }
 
 header{
@@ -216,6 +264,28 @@ header.sticky nav a{
     opacity: 0;
     transform: scale(0.3);
     transition-delay: 0.1s;
+}
+
+.gameDisplay {
+    text-align: center;
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    width: 1000px;
+    z-index: 100;
+    top: 500px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 1s all cubic-bezier(0.080, 0.9, 0.18, 1) 0.2s;
 }
 
 @media screen and (max-width: 520px) {
